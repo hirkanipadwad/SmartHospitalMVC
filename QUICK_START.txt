@@ -1,0 +1,18 @@
+SMART HOSPITAL MVC — JAVA + SQLITE/JDBC
+
+1. Unzip project and upload its CONTENTS to your GitHub repository.
+2. Click Code > Codespaces > Create codespace on main.
+3. In the Codespaces terminal (project root):
+
+   mvn compile exec:java
+
+4. In PORTS, open forwarded port 8080.
+5. Test database operations:
+
+   mvn -q compile exec:java -Dexec.mainClass=HospitalJdbcSmokeTest
+
+Key files: src/main/java/HospitalView.java (View),
+HospitalController.java (Controller), HospitalModel.java (Model),
+HospitalDao.java (JDBC SQL), src/main/resources/schema.sql (tables).
+
+Please use only fictional patient data.

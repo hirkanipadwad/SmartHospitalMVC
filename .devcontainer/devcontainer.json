@@ -1,0 +1,9 @@
+{
+  "name": "Smart Hospital MVC - Java + SQLite",
+  "image": "mcr.microsoft.com/devcontainers/java:1-21-bookworm",
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {"label": "Smart Hospital web app", "onAutoForward": "openBrowser"}
+  },
+  "postCreateCommand": "java -version && mvn -version"
+}
